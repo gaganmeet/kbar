@@ -54,15 +54,15 @@ export function useMatches() {
       actions: ActionImpl[],
       all = actionsClone
     ) {
-      for (let i = 0; i < actions.length; i++) {
-        if (actions[i].children.length > 0) {
-          let childsChildren = actions[i].children;
-          for (let i = 0; i < childsChildren.length; i++) {
-            all.push(childsChildren[i]);
-          }
-          collectChildren(actions[i].children, all);
-        }
-      }
+      // for (let i = 0; i < actions.length; i++) {
+      //   if (actions[i].children.length > 0) {
+      //     let childsChildren = actions[i].children;
+      //     for (let i = 0; i < childsChildren.length; i++) {
+      //       all.push(childsChildren[i]);
+      //     }
+      //     collectChildren(actions[i].children, all);
+      //   }
+      // }
       return all;
     })(actions);
   }, []);
