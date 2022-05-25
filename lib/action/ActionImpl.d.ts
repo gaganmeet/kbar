@@ -19,6 +19,8 @@ export declare class ActionImpl implements Action {
      */
     perform: Action["perform"];
     priority: number;
+    shouldToggle?: boolean | undefined;
+    disablePerform?: boolean | undefined;
     command?: Command;
     ancestors: ActionImpl[];
     children: ActionImpl[];

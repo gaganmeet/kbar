@@ -62,6 +62,8 @@ const App = () => {
       keywords: "back",
       section: "Navigation",
       perform: () => history.push("/"),
+      shouldToggle: false,
+      disablePerform: true,
       icon: <HomeIcon />,
       subtitle: "Subtitles can help add more context.",
     },

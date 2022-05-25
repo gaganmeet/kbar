@@ -23,6 +23,8 @@ export type Action = {
   perform?: (currentActionImpl: ActionImpl) => any;
   parent?: ActionId;
   priority?: Priority;
+  shouldToggle?: boolean;
+  disablePerform?: boolean;
 };
 
 export type ActionStore = Record<ActionId, ActionImpl>;

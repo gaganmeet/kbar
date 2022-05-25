@@ -17,6 +17,8 @@ export declare type Action = {
     perform?: (currentActionImpl: ActionImpl) => any;
     parent?: ActionId;
     priority?: Priority;
+    shouldToggle?: boolean;
+    disablePerform?: boolean;
 };
 export declare type ActionStore = Record<ActionId, ActionImpl>;
 export declare type ActionTree = Record<string, ActionImpl>;
