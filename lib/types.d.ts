@@ -9,6 +9,7 @@ export declare type ActionSection = string | {
 export declare type Action = {
     id: ActionId;
     name: string;
+    type?: string;
     shortcut?: string[];
     keywords?: string;
     section?: ActionSection;
