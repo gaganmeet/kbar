@@ -15,6 +15,7 @@ export type ActionSection =
 export type Action = {
   id: ActionId;
   name: string;
+  type?: string;
   shortcut?: string[];
   keywords?: string;
   section?: ActionSection;

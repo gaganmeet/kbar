@@ -35,6 +35,7 @@ export class ActionImpl implements Action {
   priority: number = Priority.NORMAL;
   shouldToggle?: boolean | undefined;
   disablePerform?: boolean | undefined;
+  type?: Action["type"];
   command?: Command;
   ancestors: ActionImpl[] = [];
   children: ActionImpl[] = [];
